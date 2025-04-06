@@ -1,85 +1,265 @@
 <html>
-    <head>
-        <style>
-            body {
+	<head>
+    	<style>
+        	body {
   background-image: url('https://birding-world.com/wp-content/uploads/2017/06/Vee-shaped-formation-flying-1080x675.jpg');  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 h1{
-    font-family:'Times New Roman', Times, serif;
-    background-color: white;
-    border: 5px solid black;
+	font-family:'Times New Roman', Times, serif;
+	background-color: white;
+	border: 5px solid black;
    padding:30px;
    margin:45px;
    text-align: center;
 }
+h2{
+	padding:30px;
+	margin-left:30px;
+	margin-right:30px;
+	text-align: center;
+  	background-color: black;
+  	color: white;
+}
 p{
-    font-size: xx-large;
-    color: white;
-  
+	font-size:xx-large;
+	color: white;
+}
+ul{
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: x-large;
+  overflow: hidden;
+}
+.ul1{
+
+	background-color: black;
+    
 }
 
-ul{list-style-type: none;
-margin :0;
-padding:0;
-font-size: x-large;
-}
+
 li{
-    float:left;
+	float:left;
 }
 a{ display: block;
   color: black;
-  
+  text-align: center;
   padding: 8px;
   margin:8px;
   text-decoration: none;
    background-color: whitesmoke;
 }
-.new{
-    color: white;
-    background-color: grey;   
+img{
+	border:5px solid black ;
+	width:300px;
+	height:300px;
 }
-        </style>
-    </head>
-    <body>
-       <h1>Fascinating Information About Birds</h1>
-    <p>
-        Birds are very special animals that have particular characteristics which are common amongst all of them. For instance, all of them have feathers, wings and two legs. Similarly, all birds lay eggs and are warm-blooded. They are very essential for our environment and exist in different breeds. Thus, an essay on birds will take us through their importance.
-      </p>
-        
-       <p >
-        Birds have different sizes and can be as small as 2 inches and as big as 2.75 metres. For instance, bee hummingbird (smallest) and ostrich (largest). Bird’s existence dates back to 160 million years ago.</p>
+.new{
+	color: white;
+	background-color: grey;  
+	 
+}
+.b{
+	background:none;
+}
 
-<p>There are different types of birds that exist which vary in characteristics. For instance, there are penguins that cannot fly. Further, there are birds that are known for their intelligence like Parrots and Corvidae.</p>
+.container {
+            	display: flex;
+            	flex-wrap: wrap;
+            	margin: 20px;
+        	}
 
-<p >Moreover, we have peacocks which are beautiful and symbolize rain and good weather. Next, there are bats and vultures as well. Birds connect very closely to the environment and are quite intuitive.</p>
-<p>
-They can predict the weather conditions and some are kept near coal mines for the prediction of a mine explosion. It is because they are sensitive to the release of high levels of carbon monoxide. They are quite social and enjoy singing as well. Birds enjoy the freedom of moving anywhere without boundaries.
-       </p><br>
-       <ul>
-        <li><a class="new" href="index.html">Home</a></li>
-        <li><a href="peacock.html">Peacock</a></li>
-        <li><a href="crow.html">Crow</a></li>
-        <li><a href="parrot.html">Parrot</a></li>
-        <li><a href="kite.html">Kite</a></li>
-        <li><a href="duck.html">Duck</a></li>
-        <li><a href="swan.html">Swan</a></li>
-        <li><a href="pigeon.html">Pigeon</a></li>
-        <li><a href="owl.html">Owl</a></li>
-        <li><a href="hawk.html">Hawk</a></li>
-        <li><a href="eagle.html">Eagle</a></li>
-        <li><a href="vulture.html">Vulture</a></li>
-        <li><a href="black_drongo.html">Black Drongo</a></li>
-        <li><a href="greater_coucal.html">Greater coucal/ crow pheasant</a></li>
-        <li><a href="ostrich.html"> Ostrich</a></li>
-        <li><a href="bat.html">Bat</a></li>
-        <li><a href="sparrow.html">Sparrow</a></li>
-        <li><a href="cuckoo.html">Cuckoo</a></li>
-        <li><a href="wood_pecker.html">Wood pecker</a></li>
-        <li><a href="tailor_bird.html"> Tailor bird</a></li>
-        <li><a href="cock.html">Cock</a></li>
-        <li><a href="weaver_bird.html">Weaver bird</a></li>
-        <li><a href="Myna.html">Myna</a></li>
-       </ul>
-    </body>
+	.column1 {
+            	flex: 1;
+            	padding: 10px;
+            	box-sizing: border-box;
+            	margin:10px;
+        	}
+        	.column2 {
+            	flex: 1;
+            	padding: 10px;
+            	box-sizing: border-box;
+            	text-align: center;
+          	 
+            	margin:10px;
+        	}
+ .grid-container {
+	display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-items: center;
+  grid-gap: 1px;
+  padding: 1px; 
+  width: auto;
+  length:auto;
+}
+
+
+        	@media screen and (max-width: 600px) {
+        	h2{
+	padding:10px;
+	margin-left:100px;
+	margin-right:100px;
+    
+}
+.grid-container {
+	display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-items: center;
+  grid-gap: 0px;
+  padding: 0px;
+ grid-column-end:2; 
+ 
+}
+h1{
+	font-size:x-large;
+	border: 5px solid black;
+   padding:10px;
+   margin:10px;
+   text-align: center;
+}
+p{
+	font-size:x-large;
+    
+}.ul1{
+font-size:large;}
+img{
+	border:5px solid black ;
+	width:300px;
+	height:300px;
+}
+
+    	}
+    	@media screen and (max-width: 350px) {
+        	h2{
+	background:none;
+    
+}
+.ul1{
+font-size:large;}
+h1{
+	font-size:x-large;
+	border: 5px solid black;
+   padding:10px;
+   margin:10px;
+   text-align: center;
+}
+p{
+	font-size:large;
+    
+}
+ul
+{
+	font-size:large;
+    
+}
+img{
+	border:5px solid black ;
+	width:200px;
+	height:200px;
+}
+body{
+background-color:lightblue;}
+    	}
+  	 
+    	</style>
+	</head>
+	<body>
+    	<ul class="ul1">
+			<li><a class="new" href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact_us.html">Contact us</a></li></ul>
+			<br>
+   	<h1>Fascinating Information About Birds</h1>
+   	<div class="container">
+
+   	<div class="column1">
+	<p>
+    	Birds are very special animals that have particular characteristics which are common amongst all of them. For instance, all of them have feathers, wings and two legs. Similarly, all birds lay eggs and are warm-blooded. They are very essential for our environment and exist in different breeds. Thus, an essay on birds will take us through their importance.
+  	</p>
+   	 
+  	</div><br>
+   	<div class="column1">
+    	<br>
+   	<ul >
+    	<li><a href="peacock.html">Peacock</a></li>
+    	<li><a href="crow.html">Crow</a></li>
+    	<li><a href="parrot.html">Parrot</a></li>
+    	<li><a href="kite.html">Kite</a></li>
+    	<li><a href="duck.html">Duck</a></li>
+    	<li><a href="swan.html">Swan</a></li>
+    	<li><a href="pigeon.html">Pigeon</a></li>
+    	<li><a href="owl.html">Owl</a></li>
+    	<li><a href="hawk.html">Hawk</a></li>
+    	<li><a href="eagle.html">Eagle</a></li>
+    	<li><a href="vulture.html">Vulture</a></li>
+    	<li><a href="black_drongo.html">Black Drongo</a></li>
+    	<li><a href="greater_coucal.html">Greater coucal/ crow pheasant</a></li>
+    	<li><a href="ostrich.html"> Ostrich</a></li>
+    	<li><a href="bat.html">Bat</a></li>
+    	<li><a href="sparrow.html">Sparrow</a></li>
+    	<li><a href="cuckoo.html">Cuckoo</a></li>
+    	<li><a href="wood_pecker.html">Wood pecker</a></li>
+    	<li><a href="tailor_bird.html"> Tailor bird</a></li>
+    	<li><a href="cock.html">Cock</a></li>
+    	<li><a href="weaver_bird.html">Weaver bird</a></li>
+    	<li><a href="Myna.html">Myna</a></li>
+   	</ul><br>
+   	</div>
+   	</div>
+   	<br>
+   	<h2 font-color="white" background="black" alignment="center" >National Bird Of India</h2>
+   	<a  class="b" href="peacock.html"><img src="https://caplinnews.fiu.edu/wp-content/uploads/2023/06/Peacock_Plumage.jpg"><br>
+	Peacock
+</a>   
+    
+<h2 font-color="white" background="black" alignment="center" >About state birds</h2>
+	<div class="container">
+    	<div class="column2" >
+             	<img  src="https://media.istockphoto.com/id/1059998320/photo/the-greater-flamingo-in-a-lake.jpg?s=612x612&w=0&k=20&c=FRp4nN9xtuoveeatU9t33WOkA8LsVo3u2hnZozsasqc="><br>
+             	Great Flamingo<br>
+             	Gujarat
+    	</div>
+    	<div class="column2">
+        	<img  src="https://live.staticflickr.com/7336/27695119870_0de347d39b_c.jpg"><br>
+        	Great Indian Bustard<br>
+        	Rajasthan
+   	</div>
+   	<div class="column2" >
+    	<img  src="https://i.pinimg.com/736x/5b/d0/ea/5bd0ea6343f6977e86f5700a43fb8a9e.jpg"><br>
+    	Yellow footed green pigeon<br>
+    	Maharashtra
+</div>
+</div>
+<a class="b" href="state_bird.html" ><p><u>Learn more</u></p></a>
+
+<h2>The different birds</h2>
+<div class="grid-container"><div class="item1"><img src="https://t4.ftcdn.net/jpg/03/21/76/87/360_F_321768713_uX2X7Xh5wtORcOjMOwHzUkMZFt6kIOp3.jpg" ></div>
+  <div class="item2"><img src="https://static.vecteezy.com/system/resources/thumbnails/024/561/133/small_2x/green-colorful-parrot-parakeet-photo.JPG" ></div>
+  <div class="item3"><img src="https://images.all-free-download.com/images/thumbjpg/wild_crow_picture_dynamic_closeup_6938840.jpg" ></div>  
+  <div class="item4"><img src="https://i0.wp.com/shiftingradius.com/wp-content/uploads/2020/09/tailorbird.jpg?fit=1200%2C800&ssl=1" ></div>
+  <div class="item5"><img src="https://media.istockphoto.com/id/1393735371/photo/birds-are-building-nests.jpg?s=612x612&w=0&k=20&c=vVtRDIRcb7NcbmjaNuY212PjDVTisR5YFxC-gY0KW6s=" ></div>
+  <div class="item6"><img src="https://thumbs.dreamstime.com/b/ostrich-thailand-field-30210838.jpg" ></div>
+  <div class="item7"><img src="https://images.unsplash.com/photo-1580980407668-6bb45a674180?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG92ZXxlbnwwfHwwfHx8MA%3D%3D" ></div>
+  <div class="item8"><img src="https://w0.peakpx.com/wallpaper/379/437/HD-wallpaper-white-duck-fly-water-duck-bird-air-born-white-bill-feathers.jpg" ></div>
+  <div class="item9"><img src="https://t3.ftcdn.net/jpg/08/13/35/78/360_F_813357823_LOpWGTwN4AVJL1roQbLCVp6fqWOenbrd.jpg" ></div>
+  <div class="item10"><img src="https://i.pinimg.com/736x/c3/b9/50/c3b950ac91b302a656b388efeec86437.jpg" ></div>
+  <div class="item11"><img src="https://images.unsplash.com/photo-1553264701-d138db4fd5d4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8b3dsfGVufDB8fDB8fHww" ></div>
+  <div class="item12"><img src="https://t4.ftcdn.net/jpg/00/01/66/95/360_F_1669592_Iq4JBCDE6pi6ph5xp4RJKrFcU0kTzN.jpg" ></div>
+  <div class="item13"><img src="https://i.pinimg.com/736x/a5/6b/c2/a56bc231a848e46053b0e3e333684c6f.jpg" ></div>
+  <div class="item14"><img src="https://media.istockphoto.com/id/1204099494/photo/griffon-vulture-or-eurasian-griffon-or-gyps-fulvus-at-dumping-yard-of-jorbeer-conservation.jpg?s=612x612&w=0&k=20&c=RRu76cLODomsiq-EGb2YRrkK2EdP41GfXrS1BwsvBD8=" ></div>
+  <div class="item15"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmwwCR5wwtaB1EwGej2XjFtnke5oyqe4AaxQ&s" ></div>
+  <div class="item16"><img src="https://t4.ftcdn.net/jpg/03/64/10/39/360_F_364103940_q6GCOjqawLipc2AWWPppCaxccdbqb3XI.jpg" ></div>
+  <div class="item17"><img src="https://c02.purpledshub.com/uploads/sites/62/2014/05/Male-house-sparrow.-GettyImages-128105802-5a98ec5.jpg?webp=1&w=1200" ></div>
+  <div class="item18"><img src="https://www.natureswaybirds.com/cdn/shop/articles/pileated_woodpecker_750x.png?v=1713204848" ></div>
+  <div class="item19"><img src="https://t3.ftcdn.net/jpg/06/16/31/68/360_F_616316806_w7Xrj4nhQPXDFRjgygMoR9IZ2HAhtv8b.jpg" ></div>  
+  <div class="item20"><img src="https://c1.wallpaperflare.com/preview/931/724/46/chicken-hen-rooster-animal-thumbnail.jpg" ></div>  
+
+</div>
+
+
+
+	</body>
 </html>
+
+
