@@ -16,6 +16,7 @@
 p{
 	font-size:x-large;
 	color:white;
+  font-weight: 800 ;
 }
 
 ul{
@@ -60,12 +61,11 @@ h2{
 	margin-right:30px;
 	text-align: center;
    	text-decoration:2px underline;
-  	color: black;
+  	
 }
 body
 {
-background-image:url('https://img.freepik.com/premium-photo/close-up-plants-growing-field_1048944-3248184.jpg?semt=ais_hybrid');
- background-repeat: no-repeat;
+  background-color: rgb(17, 148, 191);
   background-size: 100% 100%;
 }
 img{
@@ -90,9 +90,43 @@ body
 {
 background-repeat:repeat;
 }
+img{
+
+width:250px;
+height:200px;
+float: none;}
+.d{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 }
 
-
+  .audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .video-wrapper iframe {
+  position: absolute;
+  
+  width: 650px;
+  height: 450px;
+  border: none;
+}
+.video-wrapper {
+  position: relative;
+  width: 50%;
+  max-width: 800px;
+  padding-bottom: 35%; /* 16:9 Aspect Ratio */
+}
+.video-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 </style>
 </head>
@@ -104,7 +138,8 @@ background-repeat:repeat;
     <br>
 
 <h1>Peacock</h1>
-<img class="item1"src="https://cdn.britannica.com/37/154237-050-A76A506D/blue-peafowl-tail-Indian-peacock-courtship-displays.jpg" alt="Smiley face" style="float:right">
+<div class="d"><img class="item1"src="https://cdn.britannica.com/37/154237-050-A76A506D/blue-peafowl-tail-Indian-peacock-courtship-displays.jpg" alt="Smiley face" style="float:right">
+</div>
 <p class=" grid-container">Peacocks are mostly known for their feathers and the bright color of their skin. Peacocks are known to be very proud creatures.
 </p>
 <h2>Scientific Name of Peacock</h2>
@@ -122,40 +157,47 @@ Peacocks are mostly omnivorous in nature and their diet mostly consists of seeds
 <p>There is a certain type of difference between the peacock and the female ones.</p><p> The difference can be seen in the colors of the feathers sported by the females of this species. Unlike the males, peahens or the female peafowl don’t really have all these bright colors on their feathers. Their appearance is much duller compared to the males. This is a trait that is seen to be very common in most birds.</p><p> The color of the skin in peahens is mostly brown and the underparts are pretty light as well. Not to mention that there is an absence of the upper tail coverts that the males so proudly possess. </p><p>Another important thing to notice about the types of peacocks is that white males might have all the colors on their necks, the females only sometimes have the particular green color in that area.
 </p>
 <h2>Voice</h2>
-<audio controls>
-  
-   
-    <source src="White Peacock Call.mp3" type="audio/mpeg">
-</audio>
+<div class="audio-container">
+  <audio controls>
+    <source class="n1" src="White Peacock Call.mp3" type="audio/mpeg">
+  </audio>
+</div>
+ 
 <h2>Special</h2>
-<video width="320" height="240" controls>
-    <source src="https://youtu.be/qDvFdj-pFMc?si=6pi1C_naDNauil8O" type="video/mp4">
-     Your browser does not support the video tag.
-  </video> 
-  <ul >
-    <li><a class="new" href="peacock.html">Peacock</a></li>
-    <li><a href="crow.html">Crow</a></li>
-    <li><a href="parrot.html">Parrot</a></li>
-    <li><a href="kite.html">Kite</a></li>
-    <li><a href="duck.html">Duck</a></li>
-    <li><a href="swan.html">Swan</a></li>
-    <li><a href="pigeon.html">Pigeon</a></li>
-    <li><a href="owl.html">Owl</a></li>
-    <li><a href="hawk.html">Hawk</a></li>
-    <li><a href="eagle.html">Eagle</a></li>
-    <li><a href="vulture.html">Vulture</a></li>
-    <li><a href="black_drongo.html">Black Drongo</a></li>
-    <li><a href="greater_coucal.html">Greater coucal/ crow pheasant</a></li>
-    <li><a href="ostrich.html"> Ostrich</a></li>
-    <li><a href="bat.html">Bat</a></li>
-    <li><a href="sparrow.html">Sparrow</a></li>
-    <li><a href="cuckoo.html">Cuckoo</a></li>
-    <li><a href="wood_pecker.html">Wood pecker</a></li>
-    <li><a href="tailor_bird.html"> Tailor bird</a></li>
-    <li><a href="cock.html">Cock</a></li>
-    <li><a href="weaver_bird.html">Weaver bird</a></li>
-    <li><a href="Myna.html">Myna</a></li>
-   </ul><br>
+<div class="video-center">
+  <div class="video-wrapper">
+    <iframe 
+      src="peacock.mp4"  
+      title="mp4" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+<h1>Other birds</h1>
+    <ul >
+      <li><a href="bat.html">Bat</a></li>
+      <li><a href="black_drongo.html">Black Drongo</a></li>
+      <li><a href="cock.html">Cock</a></li>
+      <li><a href="crow.html">Crow</a></li>
+      <li><a href="cuckoo.html">Cuckoo</a></li>
+      <li><a href="duck.html">Duck</a></li>
+      <li><a href="eagle.html">Eagle</a></li>
+      <li><a href="greater_coucal.html">Greater coucal</a></li>
+        <li><a href="hawk.html">Hawk</a></li>
+      <li><a href="kite.html">Kite</a></li>
+      <li><a href="Myna.html">Myna</a></li>
+      <li><a href="ostrich.html"> Ostrich</a></li>
+      <li><a href="owl.html">Owl</a></li>
+      <li><a href="parrot.html">Parrot</a></li>
+        <li><a  class="new" href="peacock.html">Peacock</a></li>
+        <li><a href="pigeon.html">Pigeon</a></li>
+        <li><a href="sparrow.html">Sparrow</a></li>
+        <li><a href="swan.html">Swan</a></li>	
+        <li><a href="tailor_bird.html"> Tailor bird</a></li>
+        <li><a href="vulture.html">Vulture</a></li>
+          <li><a href="weaver_bird.html">Weaver bird</a></li>
+      <li><a href="wood_pecker.html">Wood pecker</a></li> 	
+       </ul><br>
 </body>
 </html>
 
