@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Bird Info</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background:lightblue; /* light sky blue */
+    }
+
+    .contact-section {
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 45px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-section h2 {
+      text-align: center;
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    .contact-section p {
+      text-align: center;
+      color: #34495e;
+      margin-bottom: 30px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-form button {
+      background-color: grey;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 22px;
+      border-radius: 8px;
+      cursor: pointer;
+     
+    }
+
+    .contact-form button:hover {
+      background-color: orange;
+    }
+    ul{
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: x-large;
+  overflow: hidden;
+}
+.ul1{
+
+	background-color: black;
+    
+}
+
+	
+a{ display: block;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  margin:8px;
+  text-decoration: none;
+   background-color: whitesmoke;
+}
+li{
+    font-family:'Times New Roman', Times, serif;
+	font-size:x-large;
+	color: white;
+    float:left;
+
+}.new{
+	color: white;
+	background-color: grey;  
+	 
+}body {
+  background-color: rgb(17, 148, 191);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+    
+  </style>
+</head>
+<body>
+    <ul class="ul1">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="new" href="contact_us.html">Contact us</a></li></ul>
+        <br>
+  <div class="contact-section">
+    
+    <h2>Contact Us</h2>
+    <p>Have questions or cool bird facts to share? We'd love to hear from you!</p>
+    <form class="contact-form" action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Type your message here..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
